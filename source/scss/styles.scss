@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap');
+
+@import '_mixins';
+@import '_variables';
+
+@import '_home';
+@import '_blog';
+@import '_work';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Heebo', sans-serif;
+	overflow-x: hidden;
+}
+
+.max-width {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.title {
+	font-weight: bold;
+}
+
+.regular-title {
+	font-weight: 400;
+}
+
+.link {
+	text-decoration: none;
+	color: $dark;
+}
+
+.btn {
+	width: 208px;
+	height: 47px;
+	font-weight: 500;
+	font-size: 18px; //* in the layout 20px but I changed it to 18px
+	line-height: 29px;
+	background-color: $primary;
+	color: #fff;
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+	border-radius: 30px;
+	box-shadow: 0 3px 2px 1px $primary-darker;
+}
+
+.btn:active {
+	box-shadow: none;
+}
+
+::-webkit-scrollbar {
+	width: 13px;
+	height: 13px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #333;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #555;
+	border: 2px solid #333;
+	border-radius: 20px;
+}
+
+::-webkit-scrollbar-corner {
+	background-color: #333;
+}
